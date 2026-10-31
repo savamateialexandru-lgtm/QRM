@@ -23,3 +23,13 @@ if (sum(numeric_columns) >= 2) {
 } else {
 	plot(as.factor(credit_portfolio_data[[1]]), main = "Credit Portfolio Data")
 }
+
+
+# generate a vecotr of 100 random numbers between 1 and 100
+X <- sample(1:100, 100, replace = TRUE)
+
+# generate a vector of 100 random numbers between 1 and 100
+Y <- sample(1:100, 100, replace = TRUE)
+
+# generate a scatter plot of the two vectors
+plot(X, Y, main = "Scatter Plot of Random Numbers", xlab = "X", ylab = "Y", pch = 19, col = rgb(0.2, 0.4, 0.6, 0.7))
